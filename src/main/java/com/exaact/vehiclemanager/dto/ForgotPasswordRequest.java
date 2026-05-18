@@ -8,18 +8,9 @@ import lombok.*;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class RegisterRequest {
-
-    @NotBlank(message = "Username is required")
-    private String userName;
-
-    @NotBlank(message = "Password is required")
-    private String password;
+public class ForgotPasswordRequest {
 
     @Email(message = "Invalid email format")
     @NotBlank(message = "Email is required")
     private String email;
-
-    @NotBlank(message = "Phone number is required")
-    private String phoneNumber;
 }
